@@ -1,3 +1,7 @@
+#The following code identifies out-of-control census blocks in the City of Chicago by their energy usage. The method calculates 
+#z-scores by month and building type. The code also includes various ways to illustrate these trends.
+#source data can be found at the City of Chicago Open Data Portal - Energy Usage 2010
+
 energy<-read.csv("energy.csv",header=T,na.strings=c("","*","NA"))
 energy_descriptors<-energy[,1:4]
 energy_variables<-energy[,c(18:19,33:35,64:73)]
